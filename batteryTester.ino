@@ -166,6 +166,8 @@ void loop() {
       lcd.write(2);
       lcd.setCursor(0, 1);
       lcd.print((millis()/1000)-startTime);
+      lcd.setCursor(13, 1);
+      lcd.print(analogRead(A7)*(5.0/1023.0));
       if(cycleTime - cycleTimeOffset >= 29) {
         Serial.println(analogRead(A7)*(5.0/1023.0));
         cycleTimeOffset = cycleTimeOffset + 30;
