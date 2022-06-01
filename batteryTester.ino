@@ -40,7 +40,6 @@
 
 */
 
-//added racing stripes!
 
 // include the library code:
 #include <LiquidCrystal.h>
